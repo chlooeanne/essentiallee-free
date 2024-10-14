@@ -1,0 +1,463 @@
+[
+  {
+    "latitude": 46.45264,
+    "longitude": -90.17179,
+    "title": "St. Vincent de Paul Society Thrift Store",
+    "address": "216 W Aurora St, Ironwood, MI 49938",
+    "hours": {
+      "Sunday": ["10:00-16:00"],
+      "Monday": ["10:00-16:00"],
+      "Tuesday": ["10:00-16:00"],
+      "Wednesday": ["10:00-16:00"],
+      "Thursday": ["10:00-16:00"],
+      "Friday": ["10:00-16:00"],
+      "Saturday": ["10:00-14:00"]
+    },
+    "phone": "+1 906-932-4547",
+    "website": "https://www.svdpup.org/"
+  },
+  {
+    "latitude": 46.48041,
+    "longitude": -90.05963,
+    "title": "Gogebic Ontonagon Community Action",
+    "address": "100 S Mill St, Bessemer, MI 49911",
+    "hours": {
+      "Sunday": ["Closed"],
+      "Monday": ["08:00-16:30"],
+      "Tuesday": ["08:00-16:30"],
+      "Wednesday": ["08:00-16:30"],
+      "Thursday": ["08:00-16:30"],
+      "Friday": ["08:00-16:30"],
+      "Saturday": ["Closed"]
+    },
+    "phone": "+1 906-667-0283",
+    "website": "http://www.gocaa.org/"
+  },
+  {
+    "latitude": 46.75097,
+    "longitude": -89.585,
+    "title": "White Pine United Methodist",
+    "address": "9 Tamarack St, White Pine, MI 49971",
+    "hours": {
+      "Sunday": ["11:00-12:30", "16:00-18:00"],
+      "Monday": ["11:00-12:30", "16:00-18:00"],
+      "Tuesday": ["Closed"],
+      "Wednesday": ["Closed"],
+      "Thursday": ["Closed"],
+      "Friday": ["Closed"],
+      "Saturday": ["Closed"]
+    },
+    "phone": "+1 906-885-5419",
+    "website": "https://www.whitepinemicommunityumc.org/"
+  },
+  {
+    "latitude": 46.8716,
+    "longitude": -89.31642,
+    "title": "St. Vincent de Paul Society Thrift",
+    "address": "205 Quartz St, Ontonagon, MI 49953",
+    "hours": {
+      "Sunday": ["Closed"],
+      "Monday": ["9:30-16:00"],
+      "Tuesday": ["9:30-16:00"],
+      "Wednesday": ["9:30-16:00"],
+      "Thursday": ["9:30-16:00"],
+      "Friday": ["9:30-16:00"],
+      "Saturday": ["11:00-15:00"]
+    },
+    "phone": "+1 906-884-4977",
+    "website": "https://www.svdpup.org/"
+  },
+  {
+    "latitude": 46.09114,
+    "longitude": -88.64182,
+    "title": "St. Vincent de Paul Society",
+    "address": "313 W Genesee St, Iron River, MI 49935",
+    "hours": {
+      "Sunday": ["Closed"],
+      "Monday": ["10:00-16:00"],
+      "Tuesday": ["Closed"],
+      "Wednesday": ["10:00-16:00"],
+      "Thursday": ["10:00-16:00"],
+      "Friday": ["10:00-16:00"],
+      "Saturday": ["10:00-16:00"]
+    },
+    "phone": "+1 906-265-6271",
+    "website": "https://www.svdpup.org/"
+  },
+  {
+    "latitude": 47.24954,
+    "longitude": -88.45294,
+    "title": "Copper Country Angel Mission",
+    "address": "433 5th St, Calumet, MI 49913",
+    "hours": {
+      "Sunday": ["Closed"],
+      "Monday": ["Closed"],
+      "Tuesday": ["Closed"],
+      "Wednesday": ["11:00-14:00"],
+      "Thursday": ["11:00-14:00"],
+      "Friday": ["11:00-14:00"],
+      "Saturday": ["11:00-14:00"]
+    },
+    "phone": "",
+    "website": "http://ccangelmission.org/"
+  },
+  {
+    "latitude": 47.12678,
+    "longitude": -88.58108,
+    "title": "Society of St Vincent de Paul - Hancock Thrift Store",
+    "address": "204 Quincy St, Hancock, MI 49930",
+    "hours": {
+      "Sunday": ["Closed"],
+      "Monday": ["10:00-16:45"],
+      "Tuesday": ["10:00-16:45"],
+      "Wednesday": ["10:00-18:00"],
+      "Thursday": ["10:00-16:45"],
+      "Friday": ["10:00-16:45"],
+      "Saturday": ["10:00-16:00"]
+    },
+    "phone": "+1 906-482-7705",
+    "website": ""
+  },
+  {
+    "latitude": 47.12653,
+    "longitude": -88.59793,
+    "title": "Gloria Dei Lutheran Church",
+    "address": "1000 Quincy St, Hancock, MI 49930",
+    "hours": "",
+    "phone": "+1 906-482-2381",
+    "website": "http://gdlch.org/"
+  },
+  {
+    "latitude": 46.92451,
+    "longitude": -88.62375,
+    "title": "Tapiola Apostolic Lutheran Church",
+    "address": "17602 N Lake Ave, Chassell, MI 49916",
+    "hours": "",
+    "phone": "+1 906-334-2766",
+    "website": "https://tapiolachurch.org/"
+  },
+  {
+    "latitude": 46.7575,
+    "longitude": -88.45522,
+    "title": "St. Vincent de Paul Society Thrift Store",
+    "address": "14 S Main St, L'Anse, MI 49946",
+    "hours": "",
+    "phone": "+1 906-524-7006",
+    "website": "https://www.svdpup.org/"
+  },
+  {
+    "latitude": 46.09688,
+    "longitude": -88.32954,
+    "title": "St. Vincent de Paul Society",
+    "address": "136 Superior Ave, Crystal Falls, MI 49920",
+    "hours": "",
+    "phone": "+1 906-875-4251",
+    "website": ""
+  },
+  {
+    "latitude": 46.40694,
+    "longitude": -87.97828,
+    "title": "St. Vincent de Paul Society",
+    "address": "316 Kloman Ave, Republic, MI 49879",
+    "hours": "",
+    "phone": "+1 906-376-2400",
+    "website": ""
+  },
+  {
+    "latitude": 46.48628,
+    "longitude": -87.70579,
+    "title": "Hope Free Lutheran Church Food Pantry",
+    "address": "795 N Lake Dr, Ishpeming, MI 49849",
+    "hours": "",
+    "phone": "+1 906-485-5714",
+    "website": ""
+  },
+  {
+    "latitude": 46.48839,
+    "longitude": -87.66692,
+    "title": "Salvation Army",
+    "address": "222 E Division St, Ishpeming, MI 49849",
+    "hours": "",
+    "phone": "+1 906-486-8121",
+    "website": "http://www.salvationarmy.org/"
+  },
+  {
+    "latitude": 46.48987,
+    "longitude": -87.66531,
+    "title": "St. Vincent de Paul Society Store",
+    "address": "322 Cleveland Ave, Ishpeming, MI 49849",
+    "hours": "",
+    "phone": "+1 906-486-4237",
+    "website": ""
+  },
+  {
+    "latitude": 45.81835,
+    "longitude": -88.06697,
+    "title": "Saint Vincent De Paul Food Pantry",
+    "address": "101 W A St, Iron Mountain, MI 49801",
+    "hours": "",
+    "phone": "+1 906-779-0749",
+    "website": "https://m.facebook.com/pages/category/Product-Service/St-Vincent-de-Paul-Food-Pantry-101177872162029/"
+  },
+  {
+    "latitude": 45.81039,
+    "longitude": -88.0592,
+    "title": "First Lutheran Church",
+    "address": "1210 S Stephenson Ave, Iron Mountain, MI 49801",
+    "hours": "",
+    "phone": "+1 906-774-0133",
+    "website": ""
+  },
+  {
+    "latitude": 45.80367,
+    "longitude": -88.0833,
+    "title": "Maranatha Assembly Of God Church Distribution Center - Food Pantry",
+    "address": "917 Pyle Dr, Kingsford, MI 49802",
+    "hours": "",
+    "phone": "+1 906-774-7631",
+    "website": ""
+  },
+  {
+    "latitude": 45.79999,
+    "longitude": -88.07605,
+    "title": "DICSA's Denim Heart Thrift & Pantry",
+    "address": "621 N Hooper St, Kingsford, MI 49802",
+    "hours": "",
+    "phone": "+1 906-767-0132",
+    "website": "http://dicsami.org/denim-heart-thrift-pantry"
+  },
+  {
+    "latitude": 45.79538,
+    "longitude": -88.07927,
+    "title": "The Salvation Army",
+    "address": "145 Roseland St, Kingsford, MI 49802",
+    "hours": "",
+    "phone": "+1 906-779-5717",
+    "website": "https://centralusa.salvationarmy.org/dickinsoncounty/"
+  },
+  {
+    "latitude": 45.78478,
+    "longitude": -87.90758,
+    "title": "St. Vincent de Paul Society Thrift Store Norway",
+    "address": "431 Main St, Norway, MI 49870",
+    "hours": "",
+    "phone": "+1 906-563-7302",
+    "website": ""
+  },
+  {
+    "latitude": 45.70932,
+    "longitude": -87.60345,
+    "title": "Senior Citizens Center",
+    "address": "W5480 1st St, Hermansville, MI 49847",
+    "hours": "",
+    "phone": "+1 906-498-7735",
+    "website": ""
+  },
+  {
+    "latitude": 46.56837,
+    "longitude": -87.39705,
+    "title": "St. Vincent de Paul Society Thrift Store",
+    "address": "2119 Presque Isle Ave, Marquette, MI 49855",
+    "hours": "",
+    "phone": "+1 906-226-3721",
+    "website": "https://www.svdpup.org/"
+  },
+  {
+    "latitude": 46.54444,
+    "longitude": -87.42187,
+    "title": "The Salvation Army of Marquette County",
+    "address": "1009 W Baraga Ave, Marquette, MI 49855",
+    "hours": "",
+    "phone": "+1 906-226-2241",
+    "website": "https://centralusa.salvationarmy.org/marquettecountymi/"
+  },
+  {
+    "latitude": 46.4923,
+    "longitude": -87.35856,
+    "title": "Silver Creek Thrift",
+    "address": "219 Silver Creek Rd, Harvey, MI 49855",
+    "hours": "",
+    "phone": "+1 906-273-2473",
+    "website": ""
+  },
+  {
+    "latitude": 46.27913,
+    "longitude": -87.43913,
+    "title": "St. Vincent de Paul Society Thrift Store",
+    "address": "111 N Pine St, Gwinn, MI 49841",
+    "hours": "",
+    "phone": "+1 906-346-5610",
+    "website": "https://www.svdpup.org/"
+  },
+  {
+    "latitude": 46.06827,
+    "longitude": -87.16189,
+    "title": "Faith Lutheran Church",
+    "address": "4075 E Maple Ridge 37th Rd, Rock, MI 49880",
+    "hours": "",
+    "phone": "+1 906-356-6225",
+    "website": ""
+  },
+  {
+    "latitude": 45.84959,
+    "longitude": -87.01944,
+    "title": "Gladstone Senior Citizens Center",
+    "address": "303 N 8th St, Gladstone, MI 49837",
+    "hours": "",
+    "phone": "+1 906-428-2201",
+    "website": ""
+  },
+  {
+    "latitude": 45.73861,
+    "longitude": -87.09105,
+    "title": "The Salvation Army of Escanaba",
+    "address": "3001 5th Ave S, Escanaba, MI 49829",
+    "hours": "",
+    "phone": "+1 906-786-0590",
+    "website": "https://centralusa.salvationarmy.org/escanaba"
+  },
+  {
+    "latitude": 45.74645,
+    "longitude": -87.05874,
+    "title": "Saint Vincent De Paul Service Center Food Pantry",
+    "address": "115 8th St N, Escanaba, MI 49829",
+    "hours": "",
+    "phone": "+1 906-789-1434",
+    "website": ""
+  },
+  {
+    "latitude": 45.74427,
+    "longitude": -87.08056,
+    "title": "Escanaba Seventh Day Adventist Church Food Pantry",
+    "address": "210 S Lincoln Rd, Escanaba, MI 49829",
+    "hours": "",
+    "phone": "+1 906-786-0887",
+    "website": ""
+  },
+  {
+    "latitude": 45.74752,
+    "longitude": -87.07746,
+    "title": "Escanaba Senior Center",
+    "address": "225 N 21st St, Escanaba, MI 49829",
+    "hours": "",
+    "phone": "+1 906-786-8850",
+    "website": ""
+  },
+  {
+    "latitude": 45.95566,
+    "longitude": -86.24644,
+    "title": "St. Vincent de Paul of Manistique, MI",
+    "address": "231 S Cedar St, Manistique, MI 49854",
+    "hours": "",
+    "phone": "+1 906-341-8181",
+    "website": "https://www.svdpup.org/"
+  },
+  {
+    "latitude": 45.86416,
+    "longitude": -84.72723,
+    "title": "Sault Tribe Elderly Meals",
+    "address": "399 McCann St, St Ignace, MI 49781",
+    "hours": "",
+    "phone": "+1 906-643-8139",
+    "website": ""
+  },
+  {
+    "latitude": 46.24391,
+    "longitude": -85.9173,
+    "title": "Christ's Fellowship Ministries Food Pantry",
+    "address": "8082 Cornell Rd, Germfask, MI 49836",
+    "hours": "",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "latitude": 46.20533,
+    "longitude": -85.7536,
+    "title": "Marcy's Pantry",
+    "address": "17475 W Co Rd H-42, Curtis, MI 49820",
+    "hours": "",
+    "phone": "+1 906-586-9525",
+    "website": "https://m.facebook.com/profile.php?id=100064814553694"
+  },
+  {
+    "latitude": 46.11632,
+    "longitude": -85.57225,
+    "title": "Love INC of West Mackinac County",
+    "address": "W14015 Melville St, Engadine, MI 49827",
+    "hours": "",
+    "phone": "+1 906-477-1050",
+    "website": "http://www.loveincwmc.org/"
+  },
+  {
+    "latitude": 46.35561,
+    "longitude": -85.50955,
+    "title": "Chippewa-Luce-Mackinac Community Action Agency",
+    "address": "207 Newberry Ave, Newberry, MI 49868",
+    "hours": "",
+    "phone": "+1 906-293-5621",
+    "website": "http://www.clmcaa.com/"
+  },
+  {
+    "latitude": 46.2744,
+    "longitude": -85.72365,
+    "title": "Lakefield Baptist Church",
+    "address": "24230 Co Rd 98, McMillan, MI 49853",
+    "hours": "",
+    "phone": "+1 906-586-3551",
+    "website": ""
+  },
+  {
+    "latitude": 46.67281,
+    "longitude": -85.99085,
+    "title": "First Lutheran Church-Helping Hand Pantry - Food Pantry",
+    "address": "21677 Braziel St, Grand Marais, MI 49839",
+    "hours": "",
+    "phone": "+1 906-494-2709",
+    "website": ""
+  },
+  {
+    "latitude": 45.85586,
+    "longitude": -84.71581,
+    "title": "St Ignace Area Hope",
+    "address": "250 Ferry Ln, St Ignace, MI 49781",
+    "hours": "",
+    "phone": "+1 906-643-7360",
+    "website": "http://st-ignace-area-hope.keeq.io/"
+  },
+  {
+    "latitude": 45.99933,
+    "longitude": -84.35552,
+    "title": "Cedar Post Thrift Shop",
+    "address": "362 M-134, Cedarville, MI 49719",
+    "hours": "",
+    "phone": "+1 906-484-9512",
+    "website": ""
+  },
+  {
+    "latitude": 46.26765,
+    "longitude": -84.45429,
+    "title": "New Hope Community Christian Reformed Church",
+    "address": "66 Cedar Grove Dr, Kincheloe, MI 49788",
+    "hours": "",
+    "phone": "+1 906-495-4673",
+    "website": ""
+  },
+  {
+    "latitude": 46.49703,
+    "longitude": -84.34867,
+    "title": "Chippewa Luce Mackinac Community Action Agency",
+    "address": "524 Ashmun St, Sault Ste. Marie, MI 49783",
+    "hours": "",
+    "phone": "+1 906-632-3363",
+    "website": "https://cms.clmcaa.org/"
+  },
+  {
+    "latitude": 45.96374,
+    "longitude": -86.2536,
+    "title": "Good Neighbor Services",
+    "address": "Manistique, MI 49854",
+    "hours": "",
+    "phone": "",
+    "website": ""
+  }
+]
