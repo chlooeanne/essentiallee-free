@@ -63,13 +63,12 @@ fetch('pantries.json')
             ${pantry.website ? `<h3><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h3>` : `<h3><strong>${pantry.title}</strong></h3>`}
             <p>${pantry.address}</p>
             ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
-            <a href="#pantry-${pantry.latitude}-${pantry.longitude}">View Details</a>
+            <a href="#${pantryId}" onclick="showDetailsAndHours('${pantryId}')">View Details</a>
             </div>
         `;
       marker.bindPopup(popupContent);
 
       // Create HTML for pantry info below the map
-      const pantryInfoId = "pantry-" + pantry.latitude + "-" + pantry.longitude;
       const pantryInfo = `
         <div id="${pantryId}" class="pantry">
         ${pantry.website ? `<h3><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h3>` : `<h3><strong>${pantry.title}</strong></h3>`}
@@ -97,6 +96,21 @@ fetch('pantries.json')
   .catch(error => {
     console.error('Error loading pantry data:', error);
   });
+
+// Function to show details and automatically trigger the hours display
+function showDetailsAndHours(pantryId) {
+    // Scroll the user to the corresponding pantry section in the pantry-info div
+    const pantryElement = document.getElementById(pantryId);
+    if (pantryElement) {
+        pantryElement.scrollIntoView({ behavior: 'smooth' });
+
+        // Find the "Show Hours" button and simulate a click if it's not already showing hours
+        const hoursButton = pantryElement.querySelector('.hours-button');
+        if (hoursButton && hoursButton.textContent === "Show Hours") {
+            toggleHours(hoursButton);
+        }
+    }
+}
 
 // Function to view the pantry on the map, open its popup, and scroll to the top of the map
 function viewOnMap(pantryId) {
