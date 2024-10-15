@@ -1,4 +1,3 @@
-// Function to check if the pantry is open
 function parseTime(timeString) {
     // Parse a time string like "10:00" to a Date object
     const today = new Date();
@@ -8,6 +7,7 @@ function parseTime(timeString) {
     return new Date(today.getFullYear(), today.getMonth(), today.getDate(), hours, minutes);
 }
 
+// Function to check if the pantry is open
 function isPantryOpen(hours) {
     const now = new Date();
     const currentDay = now.toLocaleString('en-US', { weekday: 'long' });
@@ -43,32 +43,26 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+const markers = {};  // Store markers by pantry ID
+
 // Fetch pantry data and add markers
-fetch('pantries.json')  // Ensure the correct path to the JSON file
+fetch('pantries.json')
   .then(response => response.json())
   .then(data => {
     data.forEach(pantry => {
       // Add markers and popups
         const marker = L.marker([pantry.latitude, pantry.longitude]).addTo(map);
+        const pantryId = `pantry-${pantry.latitude}-${pantry.longitude}`;
+
+        markers[pantryId] = marker;  // Store marker by ID
 
         const openStatus = isPantryOpen(pantry.hours);
 
-        function formatHours(hours) {
-            let formattedHours = '<ul>';
-            for (const day in hours) {
-              const timeSlots = hours[day].join(', ');
-              formattedHours += `<li><strong>${day}:</strong> ${timeSlots}</li>`;
-            }
-            formattedHours += '</ul>';
-            return formattedHours;
-          }
-
         const popupContent = `
             <div>
-            <h3><strong>${pantry.title}</strong></h3>
+            ${pantry.website ? `<h3><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h3>` : `<h3><strong>${pantry.title}</strong></h3>`}
             <p>${pantry.address}</p>
             ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
-            ${pantry.website ? `<p><a href="${pantry.website}" target="_blank">${pantry.website}</a></p>` : ''}
             <a href="#pantry-${pantry.latitude}-${pantry.longitude}">View Details</a>
             </div>
         `;
@@ -77,12 +71,12 @@ fetch('pantries.json')  // Ensure the correct path to the JSON file
       // Create HTML for pantry info below the map
       const pantryInfoId = "pantry-" + pantry.latitude + "-" + pantry.longitude;
       const pantryInfo = `
-        <div id="${pantryInfoId}" class="pantry">
-        <h3><strong>${pantry.title}</strong></h3>
+        <div id="${pantryId}" class="pantry">
+        ${pantry.website ? `<h3><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h3>` : `<h3><strong>${pantry.title}</strong></h3>`}
         <p>${pantry.address}</p>
         ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
-        ${pantry.website ? `<p><a href="${pantry.website}" target="_blank">${pantry.website}</a></p>` : ''}
         ${pantry.hours ? `<p><strong>Status:</strong> ${openStatus}</p>` : ''}
+        <button onclick="viewOnMap('${pantryId}')">View on Map</button>
         ${pantry.hours ? 
         `<button class="hours-button" onclick="toggleHours(this)">Show Hours</button>
         <div class="hours-content" style="display:none;">
@@ -103,6 +97,21 @@ fetch('pantries.json')  // Ensure the correct path to the JSON file
   .catch(error => {
     console.error('Error loading pantry data:', error);
   });
+
+// Function to view the pantry on the map, open its popup, and scroll to the top of the map
+function viewOnMap(pantryId) {
+    const marker = markers[pantryId];  // Get the marker by pantry ID
+    if (marker) {
+        // Scroll the user to the map container
+        document.getElementById('map').scrollIntoView({ behavior: 'smooth' });
+
+        // Center the map on the marker
+        map.setView(marker.getLatLng(), 14);
+
+        // Open the popup for the marker
+        marker.openPopup();
+    }
+}
 
 // Search functionality
 document.getElementById('searchBtn').addEventListener('click', () => {
