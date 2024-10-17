@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFADD;
+    color: #22668D;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.mission {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mission h2 {
+    color: #22668D;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.mission p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.team {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FFCC70; /* Solid background color */
+}
+
+.team h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #FFFADD; /* Team member background color */
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #22668D;
+}
+
+.team-member p {
+    margin: 0;
+}
