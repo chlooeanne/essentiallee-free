@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -14,9 +13,22 @@
     <title>Pantry Finder</title>
 </head>
 <body>
-    <header>
-        
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <a href="/main_page.html"><img src="assets/logo.png" alt="Essentiallee Free Logo"></a>
+            <h1>Essentiallee Free</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/map.html">Food Map</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">More Resources</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Main Content -->
     <main id="main">
         <div id="search">
         <input type="text" id="zipcode" placeholder="Enter ZIP code">
@@ -26,8 +38,14 @@
         <div id="map"></div>
         <div id="pantry-info"></div>
     </main>
-    <footer>
-        
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">Links:</div>
+            <div class="footer-column">Contact:</div>
+            <div class="footer-column">Give Feedback:</div>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
