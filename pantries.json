@@ -14,7 +14,8 @@
       "Saturday": ["10:00-14:00"]
     },
     "phone": "+1 906-932-4547",
-    "website": "https://www.svdpup.org/"
+    "website": "https://www.svdpup.org/",
+    "categories": ["pantry", "donation location"]
   },
   {
     "latitude": 46.48041,
@@ -31,7 +32,8 @@
       "Saturday": ["Closed"]
     },
     "phone": "+1 906-667-0283",
-    "website": "http://www.gocaa.org/"
+    "website": "http://www.gocaa.org/",
+    "categories": ["pantry", "donation location"]
   },
   {
     "latitude": 46.75097,
