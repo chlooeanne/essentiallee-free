@@ -73,16 +73,21 @@ body {
 .buttons {
     display: flex;
     justify-content: center;
-    padding: 150px 0;
+    padding: 100px 0;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .button-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    height: 200px;
-    border: 20px solid #004f5f;
+    width: 250px;
+    height: 250px;
+    border: 40px solid #004f5f;
     border-radius: 5px;
     background-color: #91c4d3;
     overflow: hidden;
@@ -91,32 +96,44 @@ body {
 }
 
 .button-item img {
-    width: 90%;
-    padding: 10%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .button-text {
     padding: 10px;
-    color: #004f5f;
-    font-weight: bold;
+    color: #ffffff;
+    font-size: 60px;
 }
 
 /* Footer */
 .footer {
     background-color: #f7ca75;
-    padding: 40px 20px;
+    padding: 3% 10%;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .footer-column {
     width: 30%;
+}
+
+.footer-links {
+    padding-top: 2%;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #004f5f;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 /* Map */
