@@ -145,9 +145,24 @@ body {
 #map {
     padding-bottom: 50%;
     position: relative;
-    margin: 10px 50px 50px 50px;
+    margin: 10px 50px 10px 50px;
 }
 
 .pantry {
     margin: 0px 50px 10px;
+}
+
+#mapform > p {
+    position: relative;
+    margin: 0px 0px 0px 50px;
+}
+
+#pantry-info a {
+    text-decoration-color: #004f5f;
+    color: #004f5f;
+}
+
+#mapform a {
+    text-decoration-color: #004f5f;
+    color: #004f5f;
 }

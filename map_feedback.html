@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Resource Finder</title>
+    <title>Give Feedback</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/logo.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -27,19 +25,8 @@
 
     <!-- Main Content -->
     <main id="main">
-        <div id="search">
-        <input type="text" id="zipcode" placeholder="Enter ZIP code">
-        <button id="searchBtn">Search</button>
-        <button id="resetBtn">Reset Map</button> <!-- Reset button -->
-        
-        </div>
-        <div id="map"></div>
-        <div id="mapform">
-            <p>Something not right? <a href="map_feedback.html"><strong>Let us know.</strong></a></p>
-        </div>
-        <div id="pantry-info"></div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8OYFC9SP_OrQXRDCF7fGo6paJbmm8eu--OcYJ9OwX1PjrHQ/viewform?embedded=true" width="640" height="930" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </main>
-
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-content">
@@ -64,6 +51,5 @@
             </div>
         </div>
     </footer>
-    <script src="js/map.js"></script>
 </body>
 </html>
