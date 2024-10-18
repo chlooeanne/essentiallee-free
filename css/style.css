@@ -158,11 +158,19 @@ body {
 }
 
 #pantry-info a {
-    text-decoration-color: #004f5f;
-    color: #004f5f;
+    text-decoration-color: white;
+    color: white;
 }
 
 #mapform a {
     text-decoration-color: #004f5f;
     color: #004f5f;
+}
+
+#pantry-info {
+    background-color: #274862;
+    color: white;
+    padding: 5px;
+    margin: 15px auto 15px auto;
+    width: 90%;
 }
