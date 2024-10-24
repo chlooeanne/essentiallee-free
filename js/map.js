@@ -96,7 +96,7 @@ function fetchAndDisplayPantries() {
             // Create HTML for pantry info below the map
             const pantryInfo = `
               <div id="${pantryId}" class="pantry">
-              ${pantry.website ? `<h3><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h3>` : `<h3><strong>${pantry.title}</strong></h3>`}
+              ${pantry.website ? `<h2><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h2>` : `<h2><strong>${pantry.title}</strong></h2>`}
               <p>${pantry.address}</p>
               ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
               <p><strong>Status:</strong> ${openStatus ? 'Open' : 'Closed'}</p>
