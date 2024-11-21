@@ -60,68 +60,73 @@ document.getElementById('search').appendChild(label);
 
 // Fetch pantry data and add markers
 function fetchAndDisplayPantries() {
-    // Clear the existing markers and pantry info
-    Object.values(markers).forEach(marker => marker.remove());
-    document.getElementById('pantry-info').innerHTML = "";
+  // Clear the existing markers and pantry info
+  Object.values(markers).forEach(marker => marker.remove());
+  document.getElementById('pantry-info').innerHTML = "";
 
-    fetch('pantries.json')
-      .then(response => response.json())
-      .then(data => {
-        const showOpenOnly = filterCheckbox.checked;
-        data.forEach(pantry => {
-            const openStatus = isPantryOpen(pantry.hours);
+  fetch('pantries.json')
+    .then(response => response.json())
+    .then(data => {
+      const showOpenOnly = filterCheckbox.checked;
+      data.forEach(pantry => {
+          let openStatus = null; // Default to null if no hours are available
 
-            // If "Show Open Pantries Only" is checked, filter closed pantries
-            if (showOpenOnly && !openStatus) {
-                return; // Skip closed pantries if filter is active
-            }
+          if (pantry.hours) {
+              openStatus = isPantryOpen(pantry.hours);
+          }
 
-            // Add markers and popups
-            const marker = L.marker([pantry.latitude, pantry.longitude]).addTo(map);
-            const pantryId = `pantry-${pantry.latitude}-${pantry.longitude}`;
+          // If "Show Open Pantries Only" is checked, filter closed pantries
+          if (showOpenOnly && openStatus === false) {
+              return; // Skip closed pantries if filter is active
+          }
 
-            markers[pantryId] = marker;  // Store marker by ID
+          // Add markers and popups
+          const marker = L.marker([pantry.latitude, pantry.longitude]).addTo(map);
+          const pantryId = `pantry-${pantry.latitude}-${pantry.longitude}`;
 
-            const popupContent = `
-              <div>
-              ${pantry.website ? `<h3><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h3>` : `<h3><strong>${pantry.title}</strong></h3>`}
-              <p>${pantry.address}</p>
-              ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
-              <a href="#${pantryId}" onclick="showDetailsAndHours('${pantryId}')">View Details</a><br>
-              <a href="https://www.google.com/maps/dir/?api=1&destination=${pantry.latitude},${pantry.longitude}" target="_blank">Get Directions</a>
-              </div>
-          `;
-            marker.bindPopup(popupContent);
+          markers[pantryId] = marker;  // Store marker by ID
 
-            // Create HTML for pantry info below the map
-            const pantryInfo = `
-              <div id="${pantryId}" class="pantry">
-              ${pantry.website ? `<h2><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h2>` : `<h2><strong>${pantry.title}</strong></h2>`}
-              <p>${pantry.address}</p>
-              ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
-              <p><strong>Status:</strong> ${openStatus ? 'Open' : 'Closed'}</p>
-              <button onclick="viewOnMap('${pantryId}')">View on Map</button>
-              ${pantry.hours ? 
-              `<button class="hours-button" onclick="toggleHours(this)">Show Hours</button>
-              <div class="hours-content" style="display:none;">
-                  <ul>
-                  ${Object.entries(pantry.hours).map(([day, hours]) => 
-                      `<li>${day}: ${hours.join(', ')}</li>`).join('')}
-                  </ul>
-              </div>`
-              : ''}
-              </div>
-              <hr>
-              `;
-          
-            // Append the pantry info to the pantry-info div
-            document.getElementById('pantry-info').innerHTML += pantryInfo;
-        });
-      })
-      .catch(error => {
-        console.error('Error loading pantry data:', error);
+          const popupContent = `
+            <div>
+            ${pantry.website ? `<h3><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h3>` : `<h3><strong>${pantry.title}</strong></h3>`}
+            <p>${pantry.address}</p>
+            ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
+            <a href="#${pantryId}" onclick="showDetailsAndHours('${pantryId}')">View Details</a><br>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${pantry.latitude},${pantry.longitude}" target="_blank">Get Directions</a>
+            </div>
+        `;
+          marker.bindPopup(popupContent);
+
+          // Create HTML for pantry info below the map
+          const pantryInfo = `
+            <div id="${pantryId}" class="pantry">
+            ${pantry.website ? `<h2><strong><a href="${pantry.website}" target="_blank">${pantry.title}</a></strong></h2>` : `<h2><strong>${pantry.title}</strong></h2>`}
+            <p>${pantry.address}</p>
+            ${pantry.phone ? `<p>${pantry.phone}</p>` : ''}
+            ${openStatus !== null ? `<p><strong>Status:</strong> ${openStatus ? 'Open' : 'Closed'}</p>` : ''}
+            <button onclick="viewOnMap('${pantryId}')">View on Map</button>
+            ${pantry.hours ? 
+            `<button class="hours-button" onclick="toggleHours(this)">Show Hours</button>
+            <div class="hours-content" style="display:none;">
+                <ul>
+                ${Object.entries(pantry.hours).map(([day, hours]) => 
+                    `<li>${day}: ${hours.join(', ')}</li>`).join('')}
+                </ul>
+            </div>` 
+            : ''}
+            </div>
+            <hr>
+            `;
+
+          // Append the pantry info to the pantry-info div
+          document.getElementById('pantry-info').innerHTML += pantryInfo;
       });
+    })
+    .catch(error => {
+      console.error('Error loading pantry data:', error);
+    });
 }
+
 
 // Call fetchAndDisplayPantries on page load
 fetchAndDisplayPantries();
