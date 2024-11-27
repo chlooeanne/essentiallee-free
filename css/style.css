@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Finesse Roman;
+    font-family: "Sour Gummy";
     margin: 0;
     padding: 0;
     background-color: #f5f2df;
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #91c4d3;
+    background-color: #3A7D92;
     padding: 10px 20px;
 }
 
@@ -96,14 +96,14 @@ body {
 }
 
 .button-item img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
 .button-text {
     padding: 10px;
-    color: #ffffff;
+    color: #004f5f;
     font-size: 60px;
 }
 
@@ -152,7 +152,7 @@ body {
     margin: 0px 50px 10px;
 }
 
-#mapform > p {
+#mapform>p {
     position: relative;
     margin: 0px 0px 0px 50px;
 }
@@ -174,12 +174,13 @@ body {
     margin: 15px auto 15px auto;
     width: 90%;
 }
- /* hide zip code label */
-.sr-only{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
- }
+
+/* hide zip code label */
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
