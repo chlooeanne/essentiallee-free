@@ -1,10 +1,16 @@
 /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Sour Gummy";
     margin: 0;
     padding: 0;
     background-color: #f5f2df;
     color: #004f5f;
+    width: min-content;
 }
 
 /* Header */
@@ -20,6 +26,7 @@ body {
     display: flex;
     align-items: center;
     color: #fff;
+    width: min-content;
 }
 
 .logo img {
@@ -183,4 +190,14 @@ body {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+@media (min-width:768px) {
+    body {
+        width: auto;
+    }
+
+    .logo {
+        width: auto;
+    }
 }
