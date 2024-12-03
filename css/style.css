@@ -13,6 +13,10 @@ body {
     width: min-content;
 }
 
+h1 {
+    font-size: x-large;
+}
+
 /* Header */
 .header {
     display: flex;
@@ -27,11 +31,12 @@ body {
     align-items: center;
     color: #fff;
     width: min-content;
+    margin-right: 15px;
 }
 
 .logo img {
-    width: 50px;
-    margin-right: 10px;
+    max-width: 50px;
+    margin-right: 5px;
 }
 
 .nav ul {
@@ -39,10 +44,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    width: max-content;
 }
 
 .nav ul li {
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .nav ul li a {
@@ -199,5 +206,19 @@ body {
 
     .logo {
         width: auto;
+        margin-right: auto;
+    }
+
+    .logo img {
+        margin-right: 10px;
+    }
+
+    .nav ul {
+        width: auto;
+    }
+
+    .nav ul li {
+        margin-right: 20px;
+        margin-left: 0px;
     }
 }
