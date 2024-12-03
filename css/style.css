@@ -14,13 +14,13 @@ body {
 }
 
 h1 {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 /* Header */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #3A7D92;
     padding: 10px 20px;
@@ -36,7 +36,7 @@ h1 {
 
 .logo img {
     max-width: 50px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .nav ul {
@@ -107,6 +107,7 @@ h1 {
     overflow: hidden;
     text-align: center;
     margin: 20px;
+    box-sizing: content-box;
 }
 
 .button-item img {
@@ -116,9 +117,10 @@ h1 {
 }
 
 .button-text {
-    padding: 10px;
+    padding: inherit;
     color: #004f5f;
     font-size: 60px;
+    margin: auto;
 }
 
 /* Footer */
@@ -204,13 +206,13 @@ h1 {
         width: auto;
     }
 
+    .header {
+        justify-content: space-between;
+    }
+
     .logo {
         width: auto;
         margin-right: auto;
-    }
-
-    .logo img {
-        margin-right: 10px;
     }
 
     .nav ul {
