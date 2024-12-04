@@ -75,9 +75,11 @@ function fetchAndDisplayPantries() {
               openStatus = isPantryOpen(pantry.hours);
           }
 
-          // If "Show Open Pantries Only" is checked, filter closed pantries
-          if (showOpenOnly && openStatus === false) {
-              return; // Skip closed pantries if filter is active
+          // If "Show Open Pantries Only" is checked, filter out:
+          // - Locations without hours listed (openStatus === null)
+          // - Closed locations (openStatus === false)
+          if (showOpenOnly && (openStatus === null || openStatus === false)) {
+              return; // Skip these locations
           }
 
           // Add markers and popups
@@ -94,7 +96,7 @@ function fetchAndDisplayPantries() {
             <a href="#${pantryId}" onclick="showDetailsAndHours('${pantryId}')">View Details</a><br>
             <a href="https://www.google.com/maps/dir/?api=1&destination=${pantry.latitude},${pantry.longitude}" target="_blank">Get Directions</a>
             </div>
-        `;
+          `;
           marker.bindPopup(popupContent);
 
           // Create HTML for pantry info below the map
@@ -116,7 +118,7 @@ function fetchAndDisplayPantries() {
             : ''}
             </div>
             <hr>
-            `;
+          `;
 
           // Append the pantry info to the pantry-info div
           document.getElementById('pantry-info').innerHTML += pantryInfo;
@@ -126,6 +128,7 @@ function fetchAndDisplayPantries() {
       console.error('Error loading pantry data:', error);
     });
 }
+
 
 
 // Call fetchAndDisplayPantries on page load
