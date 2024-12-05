@@ -39,7 +39,7 @@ ul {
     content: '\25BA'; /* Unicode for right-pointing arrow */
     position: absolute;
     right: 20px;
-    top: 40px;
+    top: 25px;
     transform: translateY(-50%);
     font-size: 16px;
     transition: transform 0.3s ease;
